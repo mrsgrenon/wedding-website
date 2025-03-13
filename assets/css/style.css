@@ -104,3 +104,33 @@ footer {
         gap: 1rem; /* Smaller gap for vertical layout */
     }
 }
+
+.navbar ul {
+    list-style-type: none;  /* Remove bullets */
+    margin: 0;              /* Remove default margins */
+    padding: 0;             /* Remove default padding */
+    display: flex;          /* Horizontal layout */
+    flex-wrap: wrap;        /* Wrap when exceeding width */
+    justify-content: center; /* Center items (adjust as desired) */
+}
+
+.navbar li {
+    margin: 0 10px;         /* Horizontal spacing buffer between items */
+}
+
+.navbar a {
+    display: block;         /* Ensure links take up full clickable area */
+    padding: 14px 16px;     /* Vertical and horizontal padding for size */
+    text-decoration: none;  /* Remove underline */
+    color: #333;            /* Text color (matches your site’s aesthetic) */
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        justify-content: center; /* Keep centered on mobile */
+    }
+    .navbar li {
+        margin: 5px 10px;   /* Slightly reduce vertical spacing if wrapping occurs */
+    }
+}
