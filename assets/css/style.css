@@ -27,8 +27,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem; /* Slightly smaller gap for mobile */
     margin: 0;
     padding: 0;
 }
@@ -94,4 +95,12 @@ footer {
     width: 100%;
     padding: 1rem;
     text-align: center;
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers them */
+        gap: 1rem; /* Smaller gap for vertical layout */
+    }
 }
