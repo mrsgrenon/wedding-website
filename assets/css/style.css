@@ -1,0 +1,83 @@
+/* Customizable variables */
+:root {
+    --primary-color: #ff6f61; /* Coral */
+    --secondary-color: #2a9d8f; /* Teal */
+    --background-color: #f4f1de; /* Light cream */
+    --text-color: #264653; /* Dark teal */
+    --font-family: 'Arial', sans-serif;
+}
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+header, main, footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, select {
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
